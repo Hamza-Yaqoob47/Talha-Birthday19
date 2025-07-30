@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 Birthday Website
 
-## Getting Started
+A beautiful, interactive birthday website with confetti animation, happy birthday message, and a slideshow of memories.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Confetti Animation**: Colorful confetti falls when the website loads
+- **Dark Theme**: Beautiful dark gradient background with purple accents
+- **Happy Birthday Message**: Large, animated text with gradient colors
+- **Interactive Slideshow**: Auto-advancing slideshow with manual controls
+- **Responsive Design**: Works perfectly on desktop and mobile devices
+- **Floating Balloons**: Animated balloon effect in the background
+- **Interactive Button**: Click to restart confetti animation
+
+## 🚀 Getting Started
+
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser** and navigate to `http://localhost:3000`
+
+## 🖼️ Customizing the Slideshow
+
+To add your own birthday images to the slideshow:
+
+1. **Add your images** to the `public/` folder
+2. **Update the slideshow images** in `src/app/page.tsx`:
+
+```typescript
+const slideshowImages = [
+  '/your-image-1.jpg',
+  '/your-image-2.jpg',
+  '/your-image-3.jpg',
+  '/your-image-4.jpg',
+  '/your-image-5.jpg',
+];
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization Options
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Changing Colors
+- Modify the gradient colors in the main container: `bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900`
+- Update confetti colors in the `colors` array
+- Change text gradient colors in the title
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Adjusting Animation Duration
+- Confetti duration: Change the timeout in the `useEffect` (currently 10 seconds)
+- Slideshow interval: Modify the interval in the slideshow `useEffect` (currently 3 seconds)
 
-## Learn More
+### Adding More Features
+- Add background music
+- Include birthday countdown
+- Add more interactive elements
+- Customize the birthday message
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js 15** - React framework
+- **React Confetti** - Confetti animation library
+- **Tailwind CSS** - Styling
+- **TypeScript** - Type safety
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📱 Responsive Design
 
-## Deploy on Vercel
+The website is fully responsive and works great on:
+- Desktop computers
+- Tablets
+- Mobile phones
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎊 Happy Birthday!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This website is designed to make someone's birthday extra special with beautiful animations and a personalized slideshow of memories.
