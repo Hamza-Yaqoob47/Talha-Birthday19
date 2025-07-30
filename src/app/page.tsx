@@ -410,7 +410,7 @@ export default function Home() {
         <div className="flex-1 w-full max-w-2xl">
           <div className="relative bg-black/20 backdrop-blur-sm rounded-2xl p-4 shadow-2xl border border-white/10">
             <h2 className="text-2xl font-bold text-center text-white mb-6">
-              📸 Talha's Birthday Memories 📸
+              📸 Talha&apos;s Birthday Memories 📸
             </h2>
             
             {/* Slideshow container */}
