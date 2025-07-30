@@ -7,7 +7,6 @@ import Image from 'next/image';
 // Birthday images from the images folder
 const slideshowImages = [
   '/images/WhatsApp Image 2025-07-30 at 23.48.43_0180695f.jpg',
-  '/images/WhatsApp Image 2025-07-30 at 23.48.42_1ea0df73.jpg',
   '/images/WhatsApp Image 2025-07-30 at 23.48.41_3c52c34e.jpg',
   '/images/WhatsApp Image 2025-07-30 at 23.48.40_3a6672d0.jpg',
   '/images/WhatsApp Image 2025-07-30 at 23.48.40_e8d59e2b.jpg',
